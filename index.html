@@ -2,8 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>An error occurred. 50X - Please try again later</title>
-    <meta name="description" content="Looks like this site is down. Please try again later" />
+    <title>Oh no! Something has gone wrong. Please try again in a few minutes</title>
+    <meta
+      name="description"
+      content="Looks like this site is down due to maintenance or an error. Please try again in a few minutes"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oh no! Something has gone wrong. Please try again in a few minutes" />
+    <meta
+      property="og:description"
+      content="Looks like this site is down due to maintenance or an error. Please try again in a few minutes"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oh no! Something has gone wrong. Please try again in a few minutes" />
+    <meta
+      name="twitter:description"
+      content="Looks like this site is down due to maintenance or an error. Please try again in a few minutes"
+    />
+
     <style>
       :root {
         --primary: #1f2428;
@@ -46,14 +64,14 @@
 
       .error-title {
         text-align: center;
-        font-size: clamp(2rem, 12vw, 5rem);
+        font-size: clamp(2rem, 15vw, 5rem);
       }
 
       .error-text {
-        max-width: 45ch;
+        max-width: 50ch;
         margin-top: 2rem;
         text-align: center;
-        font-size: clamp(1.2rem, 5vw, 2rem);
+        font-size: clamp(1rem, 5vw, 2rem);
       }
 
       .error-text span {
@@ -71,16 +89,16 @@
     <div class="container">
       <div class="content">
         <div>
-          <h1 class="error-title">50X. Whoops!</h1>
+          <h1 class="error-title">50x. Whoops!</h1>
 
           <p class="error-text">
             Looks like <span id="site_name">this site</span> is down. Either this site is down for maintenance or the
-            site has crashed. Please try again later.
+            site has crashed. Please try again in a few minutes.
           </p>
 
           <footer class="footer-text">
             If the site stays down, please
-            <a href="mailto:hello@caspertheghost.me?subject=500 Page Error">contact the owner</a>
+            <a href="mailto:casper.iversen2@gmail.com?subject=500 Page Error">contact the owner</a>
           </footer>
         </div>
       </div>
